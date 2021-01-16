@@ -8,7 +8,8 @@ fi
 
 echo "设定远程仓库地址..."
 cd /scripts
-git remote set-url origin $REPO_URL
+git remote set-url origin https://gitee.com/lxk0301/jd_scripts
+echo "--------------固定地址-防止群晖直接DOCKER容器直接挂掉---"
 git reset --hard
 echo "git pull拉取最新代码..."
 git -C /scripts pull
